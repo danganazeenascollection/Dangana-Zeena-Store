@@ -1,109 +1,21 @@
 /* =======================================
-   Reset and Base Styles
-======================================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: 'Jost', sans-serif;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f4f4f4; /* Soft Light Gray */
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-  width: 100%;
-  padding: 20px;
-}
-
-/* =======================================
-   Navbar Styles
-======================================= */
-.navbar {
-  background-color: #2b73e0; /* Vibrant Blue */
-  padding: 20px 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.navbar h1 {
-  color: #fff;
-  font-size: 28px;
-}
-
-.navbar nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar nav ul li {
-  margin: 0 15px;
-}
-
-.navbar nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.navbar nav ul li a:hover {
-  color: #fcb52f; /* Golden Yellow */
-}
-
-/* =======================================
-   Banner Section
-======================================= */
-.banner {
-  width: 100%;
-  height: 400px;
-  background: url('banner.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.banner h1 {
-  font-size: 45px;
-  font-weight: bold;
-  text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
-  animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* =======================================
-   Product Showcase Section
+   New Collections Section
 ======================================= */
 .collections {
   padding: 50px 20px;
-  background: #ffffff; /* White background */
+  background: #f1f1f1; /* Light Gray background */
   text-align: center;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
+  border-radius: 10px;
 }
 
 .collections h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 20px;
   color: #2b73e0; /* Vibrant Blue */
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .collections p {
@@ -117,15 +29,17 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
+  background-color: #fff; /* White background for grid */
+  border-radius: 12px;
 }
 
 .product {
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
 }
 
 .product:hover {
