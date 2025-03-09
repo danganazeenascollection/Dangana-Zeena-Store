@@ -1,296 +1,84 @@
-/* =======================================
-   New Collections Section
-======================================= */
-.collections {
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #ff7f50, #f25f5c); /* Vibrant Coral-Orange Gradient */
-  text-align: center;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  border-radius: 10px;
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text for readability */
 }
 
-.collections h2 {
-  font-size: 38px;
-  margin-bottom: 20px;
-  color: #fff; /* White color for contrast */
-  font-family: 'Poppins', sans-serif; /* Elegant font */
-  font-weight: bold;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
-}
-
-.collections p {
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  background-color: #fff; /* White background for grid */
-  border-radius: 12px;
-}
-
-.product {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.product:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.product img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.product img:hover {
-  transform: scale(1.05);
-}
-
-.product h4 {
-  font-size: 20px;
-  margin-top: 15px;
-  font-weight: 600;
-  color: #2b73e0; /* Vibrant Blue */
-}
-
-.product p {
-  font-size: 16px;
-  margin: 10px 0;
-  color: #666;
-}
-
-.product span {
-  font-weight: bold;
-  color: #fcb52f; /* Golden Yellow */
-}
-
-.whatsapp-button {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #25D366; /* WhatsApp Green */
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: background 0.3s ease-in-out;
-}
-
-.whatsapp-button:hover {
-  background: #1ebe5d;
-}
-
-/* =======================================
-   Video Styling for Products
-======================================= */
-video {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  border-radius: 12px;
-  margin-top: 15px;
-  animation: fadeIn 1s ease-out;
-}
-
-/* =======================================
-   Footer Section
-======================================= */
-footer {
-  background-color: #001F3F; /* Dark Navy */
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 16px;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-footer a {
-  color: #25D366;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* =======================================
-   Floating WhatsApp Button
-======================================= */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #25D366;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  transition: transform 0.3s ease-in-out;
-}
-
-.whatsapp-float img {
-  width: 35px;
-  height: auto;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-/* =======================================
-   Media Queries for Responsiveness
-======================================= */
-@media (max-width: 768px) {
-  .navbar nav ul {
-    flex-direction: column;
+/* Header Styling */
+.header {
+    background-color: #0056b3; /* Deep blue background */
+    color: white;
+    padding: 20px;
     text-align: center;
-  }
-
-  .banner h1 {
-    font-size: 32px;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .product img {
-    max-width: 230px;
-  }
-
-  .product h4 {
-    font-size: 18px;
-  }
-
-  .product p {
-    font-size: 15px;
-  }
 }
 
-@media (max-width: 480px) {
-  .banner h1 {
-    font-size: 28px;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .product img {
-    max-width: 180px;
-  }
-
-  .product h4 {
-    font-size: 16px;
-  }
-
-  .product p {
-    font-size: 14px;
-  }
+/* Logo Styling */
+.logo {
+    max-width: 50px;
+    height: auto;
 }
 
-/* =======================================
-   Additional Styles for Forms and Buttons
-======================================= */
-input, button, select, textarea {
-  font-size: 16px;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  margin: 10px 0;
-}
-
-.discover-heading {
-    color: #8B0000; /* Dark Red - Change this to your preferred color */
+/* Navbar Styling */
+.navbar a {
+    color: white;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+    text-decoration: none;
+    margin: 10px;
 }
 
-button {
-  background-color: #2b73e0; /* Vibrant Blue */
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* New Collections Section */
+.discover-section {
+    background-color: #FFDDC1; /* Light Peach Background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
 }
 
-button:hover {
-  background-color: #1e5f7e; /* Dark Blue */
+/* Headline Styling */
+.discover-heading {
+    color: #8B0000; /* Dark Red */
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* =======================================
-   Loading Spinner (for future use)
-======================================= */
-.spinner {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #2b73e0;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
+/* Subheading Styling */
+.discover-subtext {
+    font-size: 18px;
+    color: #444;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-/* =======================================
-   Navbar and Logo Styles
-======================================= */
-.navbar {
-  display: flex;
-  align-items: center;
-  background-color: #2b73e0; /* Vibrant Blue */
-  padding: 20px 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+/* Product Cards */
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.navbar .logo {
-  width: 50px; /* Adjust width as needed */
-  height: auto;
-  margin-right: 20px; /* Space between logo and text */
+/* WhatsApp Floating Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar h1 {
-  color: #fff;
-  font-size: 28px;
-  flex-grow: 1; /* Allows the title to take up remaining space */
-}
-
-.navbar nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar nav ul li {
-  margin: 0 15px;
-}
-
-.navbar nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.navbar nav ul li a:hover {
-  color: #fcb52f; /* Golden Yellow */
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .discover-heading {
+        font-size: 24px;
+    }
+    .discover-section {
+        width: 95%;
+    }
 }
