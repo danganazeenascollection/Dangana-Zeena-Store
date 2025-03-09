@@ -244,3 +244,10 @@ button:hover {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.logo img {
+  max-width: 100%; /* Ensures responsiveness */
+  width: 250px; /* Adjust size as needed */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the logo */
+}
